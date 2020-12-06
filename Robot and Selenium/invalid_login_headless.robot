@@ -3,13 +3,13 @@ Documentation     A test suite with a single test for valid login.
 ...
 ...               This test has a workflow that is created using keywords in
 ...               the imported resource file.
-Resource          resource.robot
+Resource          headless_resource.robot
 
 *** Test Cases ***
-Valid Login
+Invalid Login
     Navigate to Homepage
-    Input Username    user
-    Input Password    holden
+    Input Username    x
+    Input Password    x
     Submit User Credentials
-    Dashboard Page Should Have Valid Title   Muppet Musical :P
+    Homepage Should Have Valid Title
     [Teardown]    Close Browser

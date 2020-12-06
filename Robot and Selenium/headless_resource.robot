@@ -7,7 +7,6 @@ Documentation     A resource file with reusable keywords and variables.
 Library           SeleniumLibrary
 
 *** Variables ***
-${BROWSER}        Chrome
 ${DELAY}          0
 ${SIGN_UP}      https://hedonisticopportunist.github.io/framework_tests/login.html
 ${DASHBOARD}    https://hedonisticopportunist.github.io/framework_tests/dashboard.html
@@ -15,7 +14,7 @@ ${DASHBOARD}    https://hedonisticopportunist.github.io/framework_tests/dashboar
 *** Keywords ***
 
 Navigate to Homepage
-    Open Browser    ${SIGN_UP}    ${BROWSER}
+    Open Browser    ${SIGN_UP}    headlesschrome
     Maximize Browser Window
     Set Selenium Speed    ${DELAY}
     Homepage Should Have Valid Title
