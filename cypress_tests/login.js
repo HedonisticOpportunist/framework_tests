@@ -1,6 +1,6 @@
 context('Startup', () => {
   beforeEach(() => {
-    cy.visit('https://hedonisticopportunist.github.io/framework_tests/login.html');
+    cy.visit('https://hedonisticopportunist.github.io/framework_tests/site/login.html');
   });
   
    it('Should fill out the login form and redirect to the dashboard', () => {
