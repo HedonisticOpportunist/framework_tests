@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 class TestInvalidLogin(unittest.TestCase):
-    URL = 'https://hedonisticopportunist.github.io/framework_tests/login.html'
+    URL = 'https://hedonisticopportunist.github.io/framework_tests/site/login.html'
     chrome_options = Options()
     chrome_options.add_argument("--headless")
 
